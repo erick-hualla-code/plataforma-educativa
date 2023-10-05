@@ -6,7 +6,11 @@ const Login = () => {
   return (
     <div className="login-container">
       <div className="image-container">
-        {/* Coloca aquí tu imagen de fondo */}
+        <img
+          src="https://img.freepik.com/vector-premium/plantilla-diseno-logotipo-educacion-inteligente_145155-2117.jpg"
+          alt="Imagen de fondo"
+          className="background-image"
+        />
       </div>
       <div className="form-container">
         <h2>Iniciar Sesión</h2>

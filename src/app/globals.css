@@ -1,27 +1,120 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* styles/styles.css */
+/* styles.css */
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* Estilos para el contenedor principal */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: lightblue; /* Fondo celeste claro */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+/* Estilos para la barra lateral */
+.sidebar {
+  background-color: #333; /* Color de fondo de la barra lateral */
+  color: white; /* Color de texto de la barra lateral */
+  width: 200px; /* Ancho de la barra lateral */
+  padding: 20px;
 }
 
+/* Estilos para las opciones de la barra lateral */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+/* Estilos para el contenido principal (formulario) */
+.form-container {
+  width: 50%; /* Ancho del 50% para la mitad derecha */
+  background-color: white;
+  padding: 30px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  text-align: center;
+  max-width: 400px; /* Ancho máximo del formulario */
+}
+
+/* Estilos globales */
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  margin: 0;
+  padding: 0;
+  background: lightblue url('/path-to-your-wave-background.jpg') repeat;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilos para el contenedor principal */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Estilos para el contenedor de la imagen de fondo */
+.image-container {
+  width: 50%;
+  /* Establece la imagen de fondo aquí con background-image */
+  /* Ejemplo: background-image: url('/path-to-your-image.jpg'); */
+  background-size: cover;
+  background-position: center;
+}
+
+/* Estilos para el contenedor del formulario */
+.form-container {
+  flex: 1;
+  background-color: white;
+  padding: 30px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  text-align: center;
+  max-width: 400px; /* Ancho máximo del formulario */
+}
+
+
+/* Estilos para los elementos del formulario */
+h2 {
+  color: black;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: black;
+}
+
+select,
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.forgot-password {
+  text-decoration: underline;
+  color: black;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.login-button {
+  background: linear-gradient(to bottom, #6600cc, #0000cc);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background: linear-gradient(to bottom, #9900ff, #3333ff);
 }
